@@ -33,6 +33,8 @@ $STMT->bind_param("sssi",
 	$senha_hash,
 	$_POST["matricula"]);
 
-$STMT->execute();
-
-echo "foi";
+if ( $STMT->execute()){
+		header("Location: index.html#login");
+	}else {
+	die($mysqli->error. "" . $mysqli->errno);
+}

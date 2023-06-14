@@ -177,10 +177,10 @@
     <h2>Login</h2>
     <p>Entre com seu e-mail e senha para acessar sua conta</p>
     <div class="login-form">
-        <form>
-            <input type="email" id="emaillog" name="email" placeholder="exemplo@dominio.com"><br>
-            <input type="password" id="senhalog" name="senhalog" placeholder="Senha"><br>
-            <button type="button" onclick="entrar()">Entrar</button><br>
+        <form action="login.php" method="post">
+            <input type="email" id="email" name="email" placeholder="exemplo@dominio.com"><br>
+            <input type="password" id="senha" name="senha" placeholder="Senha"><br>
+            <button>Entrar</button><br>
         </form>
     </div>
 </section>
@@ -201,11 +201,15 @@
             </div>
             <button>Cadastrar</button>
         </form>
+
     </div>
 </section>
 
-<script>
-</script>
+<section id="logado" class="logado">
+    <script>
+        alert("logado")
+    </script>
+</section>
 
 <!-- FAQ -->
 <section id="faq" class="faq">
